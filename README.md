@@ -90,6 +90,10 @@ Charts include:
 ## 📊 Dashboard Integration (Tableau / Power BI)
 
 Load this file into Tableau: output/country_data_cleaned.csv
+## 📊 Tableau Dashboard
+
+View the interactive dashboard here:  
+[Global Development & Health Insights Dashboard]
 
 Recommended visuals:
 
