@@ -89,12 +89,11 @@ Charts include:
 
 ## 📊 Dashboard Integration (Tableau / Power BI)
 
-This project contains my end‑to‑end ETL workflow and Tableau dashboard analysis.
-
+Load this file into Tableau: output/country_data_cleaned.csv
 ## 📊 Tableau Dashboard
 
 View the interactive dashboard here:  
-[Global Development & Health Insights Dashboard](https://public.tableau.com/app/profile/swetha.aswathappa/viz/project1_17660568101340/GDPLifeExpectancyChildMortalityAnalysisDashboard?publish=yes)
+[Global Development & Health Insights Dashboard]
 
 Recommended visuals:
 
