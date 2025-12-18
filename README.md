@@ -1,118 +1,127 @@
-my first git project
+# Terminal-Based Data Analytics Pipeline (Python & Bash)
 
-# Country Data Analytics Pipeline — ETL, Reporting & Visualization
+## 📌 Project Overview (For Recruiters)
 
-This project is a complete, automated analytics pipeline built using Python, Bash, and the terminal. It processes a global country‑level dataset, performs cleaning and transformation, generates statistical summaries, produces visualizations, and exports a dashboard‑ready dataset for Tableau.
+This project demonstrates how I build a **real-world, terminal-driven data analytics pipeline** using Python and Bash.
 
-The entire workflow runs with a single command: bash run_analysis.sh
----
+The goal is to simulate an end-to-end analytics workflow where **raw country-level socio‑economic data** is:
 
-## 🚀 Project Overview
+* extracted,
+* cleaned and transformed (ETL),
+* analyzed using Python,
+* and exported as analytics-ready outputs for BI tools such as **Tableau or Power BI**.
 
-This project demonstrates a professional end‑to‑end data workflow:
-
-- Extract: Load raw Excel data  
-- Transform: Clean, standardize, and enrich the dataset  
-- Load: Export cleaned data for dashboards  
-- Analyze: Generate summary statistics and correlations  
-- Visualize: Create charts for exploratory analysis  
-- Automate: Run the entire pipeline via Bash  
-This mirrors real-world data engineering and analytics practices.
+This project focuses on **practical data analyst skills**, not just theory.
 
 ---
+
+## 🧠 Problem Statement
+
+Raw global development datasets often come in messy formats and are not directly usable for analysis or dashboards.
+
+This project solves that problem by:
+
+* automating data cleaning and transformation,
+* generating summary statistics and visual insights,
+* and producing clean CSV outputs ready for reporting and visualization.
+
+---
+
+## 🛠 Skills Demonstrated
+
+* Python (Pandas, NumPy, Matplotlib)
+* Bash / Shell scripting
+* ETL pipeline design (Extract → Transform → Load)
+* Data cleaning & preprocessing
+* Exploratory Data Analysis (EDA)
+* Terminal-based automation
+* Analytics-ready data preparation for Tableau
+
+---
+
 ## 📂 Project Structure
-Project
-data - country-data.xlxs - country_cleaned.csv- 
-Scripts - country_analysis.py- country_summary_report.txt
-images - country_plots.py - gdpp_distribution.png -ife_expec_vs_gdpp.png -child_mort_vs_gdpp.png
-Output - run_analysis.sh
+
+```
+terminal_practice_project1/
+│
+├── run_analysis.sh        # One-command pipeline execution
+├── etl_pipeline.py        # Data extraction, cleaning, transformation
+├── analysis.py            # EDA and visualization logic
+├── output/                # Cleaned datasets and plots
+├── README.md
+└── .gitignore
+```
 
 ---
 
-## 🧠 ETL Pipeline Details
+## ▶️ How to Run the Project
 
-### 1. Extract
-Loads the raw dataset from: data/Country-data.xlxs
+Clone the repository and run the pipeline from the terminal:
 
-### 2. Transform
-Cleaning steps include:
+```bash
+git clone https://github.com/aswathappaswetha-tech/terminal_practice_project1.git
+cd terminal_practice_project1
+bash run_analysis.sh
+```
 
-- Standardizing column names  
-- Removing empty rows  
-- Dropping rows missing key fields  
-- Converting data types  
-- Creating a GDP per capita category:
-  - Low  
-  - Lower‑Middle  
-  - Upper‑Middle  
-  - High  
+This single command:
 
-### 3. Load
-Exports cleaned data to: output/country_data_cleaned.csv
-This file is dashboard‑ready for Tableau or Power BI.
+1. Loads the raw dataset
+2. Cleans and transforms the data
+3. Performs analysis
+4. Saves cleaned CSV files and visualizations
 
 ---
 
-## 📊 Summary Report
+## 📊 Outputs / Results
 
-Generated at: output/country_summary_report.txt
-Includes:
+* Cleaned, analytics-ready CSV files
+* Summary statistics of socio-economic indicators
+* Visualizations such as:
 
-- Descriptive statistics  
-- Correlation between life expectancy and GDP  
-- GDP category distribution  
+  * GDP vs Life Expectancy
+  * Country-level comparisons
+## 📈 Interactive Dashboard (Tableau)
 
----
+An interactive Tableau dashboard was built using the cleaned output from this pipeline.
 
-## 📈 Visualizations
-
-Saved in:output/plots/
-
-
-Charts include:
-
-- GDP per capita distribution  
-- Life expectancy vs GDP  
-- Child mortality vs GDP  
-
----
-
-## ⚙️ How to Run the Pipeline
-
-### 1. Activate the virtual environment : source env/Scripts/activate
-
-### 2. Run the automated workflow : bash scripts/run_analysis.sh
-
-### 3. View outputs : output/country_data_cleaned.csv output/country_summary_report.txt output/plots/
-
----
-
-## 📊 Dashboard Integration (Tableau / Power BI)
-
-This project contains my end‑to‑end ETL workflow and Tableau dashboard analysis.
-
-## 📊 Tableau Dashboard
-
-View the interactive dashboard here:  
+🔗 **View the dashboard here:**  
 [Global Development & Health Insights Dashboard](https://public.tableau.com/app/profile/swetha.aswathappa/viz/project1_17660568101340/GDPLifeExpectancyChildMortalityAnalysisDashboard?publish=yes)
 
-Recommended visuals:
+### Dashboard Highlights:
+- GDP vs Life Expectancy analysis
+- Child Mortality comparison across countries
+- Health & economic development insights
+- Interactive filtering by country and indicators
 
-- Life expectancy vs GDP (bubble chart)  
-- Child mortality vs GDP (scatter)  
-- GDP category distribution (bar chart)  
-- Health spending vs life expectancy  
-- Imports/exports vs GDP  
+📌 *The dashboard uses CSV outputs generated directly from this ETL pipeline.*
+
 
 ---
 
-## 👤 Author
+## 🚀 Why This Project Matters
 
-**Swetha Gowribidanur Aswathappa**  
-Berlin, Germany  
-Data Analytics | Python | SQL | Visualization | ETL Pipelines
+This project reflects how data analysts work in real environments:
 
+* using the terminal,
+* automating workflows,
+* and preparing data for decision-making tools.
 
+It demonstrates my ability to move from **raw data → insights → business-ready outputs**.
 
+---
 
+## 👩‍💻 Author
 
+**Swetha Gowribidanur Aswathappa**
+MSc Data Analytics | Python | SQL | ETL | Data Visualization
+Berlin, Germany
+
+---
+
+## 📎 Future Improvements
+
+* Add logging and error handling
+* Parameterize input datasets
+* Extend analysis with clustering or regression models
+* Connect pipeline directly to Tableau extracts
